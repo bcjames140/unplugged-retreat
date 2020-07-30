@@ -663,6 +663,10 @@ input[type=button] {
     width: 45%;
   }
   
+  .map figure {
+    padding-bottom: 45.5%;
+  } 
+
   .contact-section .content-wrapper h2 {
     width: 80%;
   }
@@ -695,8 +699,8 @@ input[type=button] {
 
   .faq h4,
   .faq p {
-      font-size: .875em;
-      line-height: 1.125;
+    font-size: .875em;
+    line-height: 1.125;
   }
 
 }
@@ -778,6 +782,10 @@ input[type=button] {
     width: 95%;
   }
 
+  .map figure {
+    padding-bottom: 37.5%;
+  }
+  
   .contact-content h4 {
     font-size: 1.875em;
   }
