@@ -103,6 +103,8 @@ body {
 ul, 
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
  
 a {
@@ -114,6 +116,7 @@ h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.875em;
   font-weight: 500;
+  margin: 0;
 }
  
 h3, 
@@ -144,7 +147,7 @@ address {
 .content-wrapper {
   width: 90%;
   margin: 50px 0;
-  }
+}
 
 /*-- Base Header & Footer Styles --*/
 
@@ -169,11 +172,11 @@ header .content-wrapper {
 }
 
 header figure {
-  width: 60%;
-  display: flex;
-  justify-content: center;
   align-items: center;
+  display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+  width: 60%;
 }
 
 .header-divider {
@@ -230,8 +233,12 @@ footer .social-icons {
 
 footer .social-icons p {
   align-items: center;
+  background-color: #527158;
+  border-radius: 50%;
   display: flex;
+  height: 40px;
   justify-content: center;
+  width: 40px;
 }
 
 footer .social-icons p i {
@@ -250,10 +257,10 @@ footer .copyright {
   background-image: url(../img/jake-melara-30679-unsplash.jpg);
   background-size: cover;
   background-position: center;
-  min-height: 500px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -279,32 +286,32 @@ aside .form{
 
 input[type=text] {
   box-sizing: border-box;
-  width: 100%;
   color: #2a423a;
   font-style: italic;
   padding: 1em;
+  width: 100%;
 }
 
 input[type=button] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
   background-color: #2a423a;
-  font-family: 'Poppins', Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
   border: none;
+  color: #e2e3ed;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
+  margin-top: 20px;
+  padding: 20px 0;
   text-align: center;
   text-transform: uppercase;
+  width: 100%;
 }
 
 /* Features */
 
 .features {
   background-image: url(../img/rawpixel-800820-unsplash1.jpg);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -341,13 +348,13 @@ input[type=button] {
 .reviews {
   background-color: #2a423a;
   display: flex;
-  justify-content: center;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
 .reviews h2 {
-  margin-bottom: 40px;
   line-height: 1;
+  margin-bottom: 40px; 
 }
 
 .reviews h3 {
@@ -368,19 +375,19 @@ input[type=button] {
 }
 
 .map figure {
-  width: 100%;
   height: 0; 
-  padding-bottom: 125%; 
   overflow: hidden;
+  padding-bottom: 58%; 
   position: relative;
+  width: 100%;
 }
 
 .map iframe {
-  width: 100%;
   height: 100%;
+  left: 0; 
   position: absolute; 
   top: 0; 
-  left: 0; 
+  width: 100%;
 }
 
 .contact-section {
@@ -556,7 +563,6 @@ input[type=button] {
 
   header nav ul {
     justify-content: space-between;
-    padding-left: 10px;
   }
 
   .header-divider {
@@ -607,6 +613,10 @@ input[type=button] {
     width: 62%;
   }
 
+  .features i {
+    margin-bottom: 30px;
+  }
+
   /* Reviews */
   .reviews article {
     display: flex;
@@ -653,6 +663,11 @@ input[type=button] {
     line-height: 1.285;
   }
 
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+
   footer .copyright {
     width: 100%;
   }
@@ -662,9 +677,9 @@ input[type=button] {
   ========================================================================== */
 
   .mission-content {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding-top: 20px
   }
   
@@ -681,9 +696,9 @@ input[type=button] {
   }
   
   .contact-content {
+    align-items: flex-start;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
   }
 
   .contact-content h4 {
@@ -717,7 +732,8 @@ input[type=button] {
 
 @media only screen and (min-width: 1200px) {
   /* Desktop Style here */
-  
+  /* General styles */
+
   header {
     padding: 15px 0;
   }
@@ -770,12 +786,12 @@ input[type=button] {
   }
   
   /* Reviews */
-  .reviews article div {
-    width: 42%;
-  }
-
   .reviews h2 {
     padding-bottom: 50px;
+  }
+
+  .reviews article div {
+    width: 42%;
   }
 
   footer h4 {
@@ -788,6 +804,7 @@ input[type=button] {
 
   .mission h2,
   .contact-section .content-wrapper h2 {
+    font-size: 3em;
     width: 95%;
   }
 
@@ -803,6 +820,7 @@ input[type=button] {
   FAQ Page
   ========================================================================== */
   .faq h2 {
+    font-size: 3em;
     width: 100%;
   }
 
